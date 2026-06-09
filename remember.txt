@@ -1,0 +1,28 @@
+Pin Assignments:
+  -GPIO21 = SDA
+  -GPIO22 = SCL
+
+  -GPIO34 = Soil Moisture Sensor
+  -GPIO27 = Float Switch
+  -GPIO25 = Pump MOSFET Gate
+
+I2C Addresses:
+  -OLED = 0x3C
+  -BME280 = 0x76
+
+Soil moisture calibration:
+  -Dry ≈ 2528
+  -Wet ≈ 880
+
+Components:
+  -ESP32-WROOM-32 Dev Board (CP2102 USB-C version)
+  -Sensors:
+    -GY-BME280
+    -Capacitive Soil Moisture Sensor
+    -Float Switch (XSL-3508-P)
+  -0.91" SSD1306 OLED 128×32
+  -Pump Sys:
+    -3-5V Mini Submersible Pump
+    -IRLZ44N MOSFET
+    -Flyback Diode
+    -1000uF Capacitor
